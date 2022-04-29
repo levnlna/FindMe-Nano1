@@ -29,6 +29,10 @@ class StuffDetailController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    //set style
+    noteUI.layer.borderWidth = 1
+    noteUI.layer.borderColor = UIColor.systemGray6.cgColor
+    
     //set data
     if ((stuffName?.isEmpty) != nil) {
       stuffNameUI.text = stuffName

@@ -29,9 +29,9 @@ class StuffController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      //set navigation bar
-//      navigationItem.backBarButtonItem?.tintColor = UIColor(named: "Dark Sea Green")
-//      navigationItem.title = categoryName
+      //set navigation color
+      self.navigationController?.navigationBar.tintColor = UIColor(named: "Dark Sea Green")
+
       navigationItem.title = category?.categoryName
       navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addStuffTapped))
       navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "Dark Sea Green")

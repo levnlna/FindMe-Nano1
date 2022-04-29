@@ -120,12 +120,12 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Stuff Name" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wW0-Jo-Gai">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Stuff Name" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="wW0-Jo-Gai">
                                 <rect key="frame" x="16" y="91" width="358" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Dm7-Yd-Kon"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="A4Q-X3-BiC">

@@ -14,7 +14,6 @@ class ViewController: UIViewController{
   @IBOutlet weak var tableView: UITableView!
   
   var rowSelected : Int?
-//  var searchData: String
   
   //reference to manage object context
   let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -27,13 +26,15 @@ class ViewController: UIViewController{
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    //alert color
+    UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self]).tintColor = UIColor(named: "Dark Sea Green")
+    
     //table
     tableView.delegate = self
     tableView.dataSource = self
     
     //get item from core data
     getCategory()
-//    filteredData = categoryData
     
     //search bar
     searchBar.delegate = self
